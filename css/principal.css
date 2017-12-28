@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg-select-button{
+    background-color: #e72611;
+    padding-bottom: 0.5em;
+}
+
+.select-button{
+    margin-top: 0.5em;
+    background-color: #e72611;
+    border: 1px solid #fff;
+    color: #fff;
+}
+h2{
+    font-size: 1.5em;
+}
+.bg-seafood{
+    background-image: url(../assets/images/ceviche.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    height: 13vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.bg-text{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    font-weight: 400;
+}
+.bg-criolla{
+    background-image: url(../assets/images/anticucho.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:bottom;
+    height: 13vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.bg-dulce{
+    background-image: url(../assets/images/picarones.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 13vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
