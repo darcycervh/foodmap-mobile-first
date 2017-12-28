@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fondo {
+    background-image: url("../assets/img/w2.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:bottom;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+.foodmap{
+    position: absolute;
+    background-color: rgba(250, 244, 227, 0.4);
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
