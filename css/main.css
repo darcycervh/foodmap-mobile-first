@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .fondo {
-    background-image: url("../assets/img/w2.jpg");
+    background-image: url("../assets/images/w2.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-position:bottom;
@@ -21,4 +21,12 @@
     width: 100%;
     display: flex;
     align-items: center;
+}
+.title-index{
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+}
+.p-index{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
 }
