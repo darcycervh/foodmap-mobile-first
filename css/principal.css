@@ -14,6 +14,11 @@
     border: 1px solid #fff;
     color: #fff;
 }
+#map {
+    height: 30vh;
+    width: 100%;
+    border: 2px solid #fff;
+}
 h2{
     font-size: 1.5em;
 }
@@ -30,6 +35,11 @@ h2{
 .bg-text{
     background-color: rgba(0, 0, 0, 0.2);
     width: 100%;
+    font-weight: 400;
+}
+.bg-mouseover-text{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100vh;
     font-weight: 400;
 }
 .bg-criolla{

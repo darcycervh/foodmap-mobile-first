@@ -9,24 +9,23 @@
   <link rel="stylesheet" href="../vendors/css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/principal.css">
 </head>
-<body>
+<body class="bg-light">
   <nav class="input-group p-2 bg-select-button">
-    <span class="input-group-addon fa fa-bars bg-warning" aria-hidden="true" id="basic-addon1"></span>
+    <span class="input-group-addon fa fa-bars bg-muted" aria-hidden="true" id="basic-addon1"></span>
     <input type="text" class="form-control" placeholder="¿Qué estás buscando?" aria-label="Username" aria-describedby="basic-addon1">                      
-    <span class="input-group-addon fa fa-search bg-warning" aria-hidden="true"></span>
+    <span class="input-group-addon fa fa-search bg-muted" aria-hidden="true"></span>
   </nav>
   <div class="container bg-select-button">
     <div class="row">
       <div class="col">
-        <button class="btn select-button " ><span class="fa fa-map-marker" aria-hidden="true"></span> Cercanos a mí</button>
-        <button class="btn select-button " >Miraflores</button>
-        <br>
-        <button class="btn select-button " ><span class="fa fa-cutlery" aria-hidden="true"></span> Comida</button>
+        <button class="btn select-button"><span class="fa fa-map-marker" aria-hidden="true"></span> Cerca de mí</button>
+        <button class="btn select-button">Miraflores</button>
+        <button class="btn select-button"><span class="fa fa-cutlery" aria-hidden="true"></span> Comida</button>
       </div>
     </div>
   </div>
   <br>
-  <div class="container mx-auto text-center">
+  <!--<div class="container mx-auto text-center">
     <div class="row">
       <div class="col-xs-3 w-25">
         <img class="w-75 h-75 ml-5 mt-2 mb-2" src="../assets/images/symbol.jpg" alt="">
@@ -35,23 +34,24 @@
         <h2>Descubre aquí los restaurantes más cercanos</h2>
       </div>
     </div>
-  </div>
+  </div>-->
+  <div id="map"></div>
   <hr>
   <div class="container">
     <div class="row">
       <div class="col">
-          <div class="card mt-2 bg-seafood">
-              <div class="card-body bg-card text-center text-white bg-text">
+          <div id="ceviche-card" class="card bg-seafood">
+              <div class="card-body bg-card text-center text-white bg-text marino">
                 Comida marina
               </div>
           </div>
-          <div class="card mt-3 bg-criolla">
-              <div class="card-body bg-card text-center text-white bg-text">
+          <div class="card mt-2 bg-criolla">
+              <div id="anticucho-card" class="card-body bg-card text-center text-white bg-text criollo">
                 Comida criolla
               </div>
           </div>
           <div class="card mt-3 bg-dulce">
-              <div class="card-body bg-card text-center text-white bg-text">
+              <div id="picarones-card" class="card-body bg-card text-center text-white bg-text dulce">
                 Dulces peruanos
               </div>
           </div>
@@ -61,6 +61,9 @@
   <script src="../vendors/js/jquery-3.2.1.js"></script>
   <script src="../vendors/js/bootstrap.min.js"></script>
   <script src="../js/principal.js"></script>
-
+  <script src="../js/ubicacionprincipal.js"></script>
+  <!-- mapa ubicación principal-->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC20eDWd_XQyltjQy08uR18L42XM1zDGeU&callback=initMap"
+  ></script>
 </body>
 </html>

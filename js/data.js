@@ -4,7 +4,7 @@ var data = {
             'seafood': [
             {
                 'name': 'Costazul Seafood',
-                'photo': 'assets/images/costazul.png',
+                'photo': '../assets/images/costazul.jpg',
                 'address': 'Calle Berlin 899, Miraflores 15074',
                 'web': 'https://www.tripadvisor.com.pe/Restaurant_Review-g294316-d1157098-Reviews-Costazul_Seafood-Lima_Lima_Region.html',
                 'calification': 4.5,
@@ -13,7 +13,7 @@ var data = {
             },
             {
                'name': 'La casa del ceviche',
-               'photo':'assets/images/ceviche.png',
+               'photo':'../assets/images/casa.jpg',
                'address': 'Calle Berlin 317, Miraflores 15074',
                'web': 'https://www.tripadvisor.com.pe/Restaurant_Review-g294316-d4102395-Reviews-La_casa_del_Ceviche-Lima_Lima_Region.html',
                'calification': 4.3,
@@ -22,7 +22,7 @@ var data = {
             },
             {
                 'name': 'Punto Azul',
-                'photo':'assets/images/azul.png',
+                'photo':'../assets/images/azul.jpg',
                 'address': 'Calle San Martin 595, Miraflores 15074',
                 'web': 'http://puntoazulrestaurante.com/',
                 'calification': 4,
@@ -31,7 +31,7 @@ var data = {
             },
             {
                 'name': 'Costanera 700',
-                'photo':'assets/images/costanera.png',
+                'photo':'../assets/images/costanera.jpg',
                 'address':'Av del Ejército 421, Miraflores 15074',
                 'web':'http://www.costanera700.pe/',
                 'calification': 4.3,
@@ -40,7 +40,7 @@ var data = {
             },
             {
                 'name': 'Restaurante Alfresco',
-                'photo':'assets/images/alfresco.png',
+                'photo':'../assets/images/alfresco.jpg',
                 'address': 'Malecón Balta 790, Miraflores',
                 'web': 'https://www.tripadvisor.com.pe/Restaurant_Review-g294316-d775152-Reviews-Restaurante_Alfresco-Lima_Lima_Region.html',
                 'calification': 4.2,
@@ -49,7 +49,7 @@ var data = {
             },
             {
                 'name': 'Aventuras Marinas',
-                'photo': 'assets/images/aventuras.png',
+                'photo': '../assets/images/aventuras.jpg',
                 'address': 'Calle Manuel Bonilla 178, Miraflores 15074',
                 'web': 'https://www.tripadvisor.com.pe/Restaurant_Review-g294316-d10385880-Reviews-Aventuras_Marinas-Lima_Lima_Region.html',
                 'calification': 4.2,
@@ -58,7 +58,7 @@ var data = {
             },
             {
                 'name': 'La Rosa Nautica',
-                'photo': 'assets/images/rosa.png',
+                'photo': '../assets/images/rosa.jpg',
                 'address': 'Espigón Miraflores, Lima 18, Circuito de Playas, Miraflores',
                 'web': 'https://www.larosanautica.com/',
                 'calification': 4.5,
@@ -67,7 +67,7 @@ var data = {
             },
             {
                 'name': 'Barra Maretazo',
-                'photo': 'assets/images/barra.png',
+                'photo': '../assets/images/barra.jpg',
                 'address': 'Calle Alcanfores 373, Miraflores 15074',
                 'web': 'http://www.barramaretazo.com/',
                 'calification': 4.5,
@@ -76,7 +76,7 @@ var data = {
             },
             {
                 'name': 'Brujas de Cachiche',
-                'photo': 'assets/images/brujas.png',
+                'photo': '../assets/images/brujas.jpg',
                 'address': 'Bolognesi 472, Miraflores 15074',
                 'web': 'http://www.brujasdecachiche.com.pe/',
                 'calification': 4.5,
@@ -85,7 +85,7 @@ var data = {
             },
             {
                 'name': 'Pescados Capitales',
-                'photo': 'assets/images/pescados.png',
+                'photo': '../assets/images/pescados.jpg',
                 'address': 'Av Mariscal La Mar 1337, Miraflores 15074',
                 'web': 'http://pescadoscapitales.com/es/',
                 'calification': 4.5,

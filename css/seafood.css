@@ -1,0 +1,14 @@
+.icon{
+    background-color: #e72611;
+    font-size: 2em;
+    color: #fff;
+}
+.bg{
+    background-color: #e72611;
+}
+img{
+    height: 15vh;
+    width: 23vh;
+    display: inline-block;
+    margin: 0.5em ;
+}
