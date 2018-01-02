@@ -1,5 +1,6 @@
-## Foodmap:
-### Programa: Realizar una web-app.
+# Foodmap
+
+## Programa: Realizar una web-app
 
 **Descripción del proyecto:**
 Hacer un filtro de restaurantes cercanos.

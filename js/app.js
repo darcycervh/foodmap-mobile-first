@@ -1,6 +1,5 @@
-$(document).ready(function(){
-    setTimeout(function(){ 
-        window.location.href="views/principal.html"; 
-    }, 5000)
-    
+$(document).ready(function() {
+  setTimeout(function() { 
+    window.location.href = 'views/principal.html'; 
+  }, 5000);
 });
