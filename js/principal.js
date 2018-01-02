@@ -34,4 +34,6 @@ $(document).ready(function() {
   $picaronesCard.on('click', function() {
     window.location.href = '../views/dulces.html';  
   });
+  var $tipoComidaFiltro = $('#tipo-comida');
+  var $comidaMarinaOption = $('#comida-marina');
 });

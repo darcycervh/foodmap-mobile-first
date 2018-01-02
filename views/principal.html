@@ -19,8 +19,14 @@
     <div class="row">
       <div class="col">
         <button class="btn select-button"><span class="fa fa-map-marker" aria-hidden="true"></span> Cerca de mí</button>
-        <button class="btn select-button">Miraflores</button>
-        <button class="btn select-button"><span class="fa fa-cutlery" aria-hidden="true"></span> Comida</button>
+        <button class="btn select-button">Distrito</button>
+        <!--<button class="btn select-button"><span class="fa fa-cutlery" aria-hidden="true"></span> Comida</button>-->
+       <select onchange="location = this.value" class="rounded float-right mr-4 p-1 pb-2"name="Comida" id="tipo-comida">
+         <option value="comida" selected>Comida</option>
+         <option value="../views/seafood.html" id="comida-marina">Comida marina</option>
+         <option value="comida-criolla">Comida criolla</option>
+         <option value="postres">Postres peruanos</option>
+       </select>
       </div>
     </div>
   </div>
@@ -31,19 +37,13 @@
     <div class="row">
       <div class="col">
           <div id="ceviche-card" class="card bg-seafood">
-              <div class="card-body bg-card text-center text-white bg-text marino">
-          
-              </div>
+              <div class="card-body bg-card text-center text-white bg-text marino"></div>
           </div>
           <div class="card mt-2 bg-criolla">
-              <div id="anticucho-card" class="card-body bg-card text-center text-white bg-text criollo">
-            
-              </div>
+              <div id="anticucho-card" class="card-body bg-card text-center text-white bg-text criollo"></div>
           </div>
           <div class="card mt-3 bg-dulce">
-              <div id="picarones-card" class="card-body bg-card text-center text-white bg-text dulce">
-                
-              </div>
+              <div id="picarones-card" class="card-body bg-card text-center text-white bg-text dulce"></div>
           </div>
       </div>
     </div>
