@@ -9,8 +9,10 @@ $(document).ready(function() {
   for (var i = 0;i < restaurantNameLength;i++) {
     var each = data['MIRAFLORES']['restaurantes']['seafood'][i]['photo'];
     var eachName = data['MIRAFLORES']['restaurantes']['seafood'][i]['name'];
-
-    var imageRestaurant = '<img class="images" src=' + each + ' type="button" data-toggle="modal" data-target="#exampleModal">';
+    var address = data['MIRAFLORES']['restaurantes']['seafood'][i]['address'];
+    var web = data['MIRAFLORES']['restaurantes']['seafood'][i]['web'];
+    var rating = data['MIRAFLORES']['restaurantes']['seafood'][i]['rating'];
+    var imageRestaurant = '<img class="images img-responsive" src=' + each + ' type="button" data-toggle="modal" data-target="#exampleModal">';
     var card = $('.restaurant').append('<div class="card d-inline-block w-75 m-1 bg-warning text-dark"><div class="card-body">' + imageRestaurant + eachName + '</div></div>');        
     var $cardBody = $('.card-body');
     console.log(eachName);
@@ -18,7 +20,7 @@ $(document).ready(function() {
            var name = event.currentTarget.innerText;
            //alert(event.currentTarget.innerText)
         });*/
-    var modal = '<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><div class="modal-title" id="exampleModalLabel"><h5>' + eachName + imageRestaurant + '</h5></div><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"></div><div class="modal-footer"><button type="button" class="btn btn-primary d-flex justify-content-between" data-dismiss="modal">Pedir ahora</button></div></div></div></div>';
+    var modal = '<div class="container"><div class="col-xs-12"><div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><div class="modal-title" id="exampleModalLabel"><h5>' + eachName + '</h5></div><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">' + imageRestaurant + '<p>Dirección: ' + address + '</p><p>Puntuación: ' + rating + '<span class="fa fa-star text-warning" aria-hidden="true"></span></p><p>Sitio web: ' + web + '</p></div><div class="modal-footer"><button type="button" class="btn btn-primary mx-auto" data-dismiss="modal">Pedir ahora</button></div></div></div></div></div></div>';
     $('.restaurant').append(modal);
   }
 });
