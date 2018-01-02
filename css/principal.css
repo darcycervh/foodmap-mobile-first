@@ -46,7 +46,7 @@ h2{
     background-image: url(../assets/images/anticucho.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    background-position:bottom;
+    background-position:center;
     height: 13vh;
     width: 100%;
     display: flex;

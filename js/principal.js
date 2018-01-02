@@ -2,22 +2,36 @@ $(document).ready(function(){
     var $cevicheCard = $('#ceviche-card');
     var $anticuchoCard = $('#anticucho-card');
     var $picaronesCard = $('#picarones-card');
-
-    $cevicheCard.on('mouseover',function(){
-        //alert('hey! con respeto!');
-        $('.marino').text('¿Algo fresco?');
-    });
-    $cevicheCard.on('click', function(){
-        setTimeout(function(){ 
-        window.location.href='../views/seafood.html'; 
-        }, 1000);
+ // creando efecto sobre la primera imagen
+    $cevicheCard.on('mouseover', ()=>{
+        $('.marino').text('Comida marina').show();
     })
-
-    $anticuchoCard.on('mouseover',function(){
-        $('.criollo').text('¿Qué tal algo con sabor a tradición?');
-    });
-
-    $picaronesCard.on('mouseover',function(){
-        $('.dulce').text('¿Qué tal algo dulce?');
-    });
+    $cevicheCard.on('mouseleave', ()=>{
+        $('.marino').hide();
+    })
+ // creando efecto sobre la segunda imagen
+    $anticuchoCard.on('mouseover',()=>{
+        $('.criollo').text('Comida criolla').show();
+    })
+    $anticuchoCard.on('mouseleave',()=>{
+        $('.criollo').hide();
+    })
+ // creando efecto sobre la tercera imagen
+    $picaronesCard.on('mouseover',()=>{
+        $('.dulce').text('Postres peruanos').show();
+    })
+    $anticuchoCard.on('mouseleave',()=>{
+        $('.dulce').hide();
+    })
+    // direccionar hacia una nueva página
+    $cevicheCard.on('click', function(){
+        window.location.href='../views/seafood.html';  
+    })
+    $anticuchoCard.on('click', function(){
+        //window.location.href='../views/criollo.html'; 
+        alert('hey'); 
+    })
+    $picaronesCard.on('click', function(){
+        window.location.href='../views/dulces.html';  
+    })
 });
