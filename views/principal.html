@@ -17,11 +17,11 @@
   </nav>
   <div class="container bg-select-button">
     <div class="row">
-      <div class="col">
-        <button class="btn select-button"><span class="fa fa-map-marker" aria-hidden="true"></span> Cerca de mí</button>
-        <button class="btn select-button">Distrito</button>
+      <div class="col d-flex flex-row">
+        <button class="btn select-button mr-2"><span class="fa fa-map-marker" aria-hidden="true"></span> Cerca de mí</button>
+        <button class="btn select-button mr-2">Distrito</button>
         <!--<button class="btn select-button"><span class="fa fa-cutlery" aria-hidden="true"></span> Comida</button>-->
-       <select onchange="location = this.value" class="rounded float-right mr-4 p-1 pb-2"name="Comida" id="tipo-comida">
+       <select onchange="location = this.value" class="rounded p-1 pb-2"name="Comida" id="tipo-comida">
          <option value="comida" selected>Comida</option>
          <option value="../views/seafood.html" id="comida-marina">Comida marina</option>
          <option value="comida-criolla">Comida criolla</option>
